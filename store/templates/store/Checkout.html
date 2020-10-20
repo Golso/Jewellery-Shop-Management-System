@@ -1,5 +1,26 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
-    <h3>checkout</h3>
+    <form>
+        <div>
+            <div>
+                <input type="text" name="name" placeholder="Name..">
+            </div>
+            <div>
+                <input type="text" name="email" placeholder="Email..">
+            </div>
+        </div>
+
+        <div>
+            <hr>
+            <p>Shipping information:</p>
+            <hr>
+            <div>
+                <input type="text" name="address" placeholder="Address..">
+            </div>
+            <div>
+                <input type="text" name="city" placeholder="City..">
+            </div>
+        </div>
+    </form>
 {% endblock content %}
